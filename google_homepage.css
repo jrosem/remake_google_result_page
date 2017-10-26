@@ -20,17 +20,18 @@ header{
 .top1{
   display:grid;
 grid-template-columns: 1fr 3fr 4fr;
-align-self:end;
-padding-top:20px;
 }
 .top-logo{
   grid-column: 1;
+  justify-self:center;
   margin:30px 15px 10px 10px ;
   height:40px;
   width:130px;
+  cursor: pointer;
 }
 .search-bar{
   background-color: white;
+  justify-self:center;
   grid-column: 2;
   display:grid;
   grid-template-columns: auto 30px 30px;
@@ -71,7 +72,7 @@ padding-top:20px;
   grid-template-columns: 35px 35px 35px;
   grid-gap: 10px;
   align-items: center;
-  justify-self: end;
+  justify-self:end;
 }
 
 .apps-icon{
@@ -118,20 +119,19 @@ grid-column: 2;
 }
 
 .tools{
-  display: inline;
   color: #777;
   text-align: center;
   text-decoration: none;
   font-family:arial, sans-serif;
   font-size:13px;
-  bottom: inherit;
-  margin-bottom: 20px;
+  padding:0;
+  margin:0;
+  align-self:start;
 }
 .button {
-    padding-top:10px;
     background-color: #fafafa;
     border: none;
-      color: #777;
+    color: #777;
     text-align: center;
     text-decoration: none;
     display: inline;
@@ -144,7 +144,7 @@ grid-column: 2;
 }
 
 .toolbutton:hover {
-	color:#222;
+	  color:#222;
     background-color: #f8f8f8;
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -206,7 +206,6 @@ li a:hover:not(.active) {
   font-family:arial, sans-serif;
   font-size:13px;
   color:#808080;
-  padding:10px;
   position:relative;
 }
 .result-listing{
@@ -248,6 +247,108 @@ li a:hover:not(.active) {
   color:#808080;
 }
 
+.searches-related{
+  margin:60px auto 20px auto;
+  font-family:arial,sans-serif;
+  font-size:15px;
+  font-weight: normal;
+   color: #222;
+  line-height: 18px;
+}
+.list-related{
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.list-related p{
+      margin:10px auto;
+}
+.list-others{
+    color:#1a0dab;
+    font-family:arial,sans-serif;
+    font-size:13px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+.list-others:hover{
+    text-decoration: underline;
+}
+.list-A{
+  grid-column: 1;
+}
+.list-B{
+  grid-column: 2;
+}
+
+.bottom-logo{
+  grid-column: 2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+}
+.page-numbers {
+    height: 20px;
+    line-height: 15px;
+    padding: 20px 16px 12px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.page-numbers {
+    float: left;
+}
+
+.current-page{
+	color:#222;
+      margin: 0px 10px 0px 10px;
+  font-family:arial, sans-serif;
+  font-size:13px;
+  cursor: pointer;
+}
+
+.page{
+    color: #4285f4;
+    margin: 0px 10px 0px 10px;
+    font-family:arial, sans-serif;
+    font-size:13px;
+    cursor: pointer;
+}
+.page:hover{
+    color: #4285f4;
+    text-decoration: underline;
+    margin: 0px 10px 0px 10px;
+    font-family:arial, sans-serif;
+    font-size:13px;
+    cursor: pointer;
+}
+
+.next{
+    color: #4285f4;
+    margin: 0px 10px 0px 40px;
+    font-family:arial, sans-serif;
+    font-size:13px;
+    cursor: pointer;
+}
+.next:hover{
+    color: #4285f4;
+    text-decoration: underline;
+    margin: 0px 10px 0px 40px;
+    font-family:arial, sans-serif;
+    font-size:13px;
+    cursor: pointer;
+}
+
+
 footer{
     background-color: #fafafa;
+    display:grid;
+    grid-template-columns: .8fr 3fr 2fr;
+  }
+
+.bottom1{
+  grid-column: 2;
+color:#aaa;
+font-family:arial, sans-serif;
+font-size:13px;
 }
