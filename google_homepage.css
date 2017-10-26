@@ -1,17 +1,9 @@
-/*
-#triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid red;
-}
-*/
 *{
   padding:0;
   margin:0;
 }
 
+/* Header */
 header{
   background-color: #fafafa;
   border-bottom: : 1px solid #c6c6c6;
@@ -191,6 +183,8 @@ li a:hover:not(.active) {
 
 }
 
+/* Main Content */
+
 .main{
   background-color:white;
   display:grid;
@@ -339,6 +333,7 @@ li a:hover:not(.active) {
     cursor: pointer;
 }
 
+/* Footer */
 
 footer{
     background-color: #fafafa;
@@ -348,7 +343,39 @@ footer{
 
 .bottom1{
   grid-column: 2;
-color:#aaa;
-font-family:arial, sans-serif;
-font-size:13px;
+  padding-top:20px;
+  color:#aaa;
+  font-family:arial, sans-serif;
+  font-size:13px;
+}
+
+.bottom-nav {
+    height: 20px;
+    line-height: 15px;
+    padding-top: 20px;
+    padding-bottom:12px;
+    margin-left: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+
+.bottom-navb {
+    float: left;
+}
+
+.bottom-navb  {
+    display: block;
+    color: #777;
+    text-align: center;
+    padding: 0px 16px 10px 16px;
+    text-decoration: none;
+    font-family:arial, sans-serif;
+    font-size:13px;
+}
+
+.bottom-navb :hover:not(.active) {
+	color:#222;
+    background-color: #fafafa;
+    cursor: pointer;
 }
